@@ -8,7 +8,7 @@
     <title>Button Clicker</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <!-- Top Navigation bar including the title, a search bar, and a login/logout button -->
     <div class="nav">
         <div class="navbar">
             <p class="title">Dojonary</p>
@@ -16,40 +16,52 @@
             <button class="login" onclick="logout(this)">Login</button>
         </div>
     </div>
+    <!-- Main body divided into two columns. Left side includes definition cards. Right side includes a card
+    with the option of adding a definition to the Dojonary. -->
     <div class="main">
+        <!-- Left side of page -->
         <div class="left">
+            <!-- Definition cards divided into two columns. Left includes the word, part of speech, plural form,
+            and a like button that tracks the number of likes. Right displays the definition. -->
             <div class="def_card">
+                <!-- Left side of the definition card -->
                 <div class="dcleft">
                     <p class="word">ninja</p>
                     <p class="part">noun</p>
                     <p class="plural">Plural: <em>ninjas</em></p>
                     <button onclick="alert('Ninja was liked')" class="likes">13 likes</button>
                 </div>
+                <!-- Right side of the definition card -->
                 <div class="dcright">
                     <p class="def">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
                 </div>
             </div>
             
+            <!-- Second definition card -->
             <div class="def_card">
+                <!-- Left side of card -->
                 <div class="dcleft">
                     <p class="word">ninja</p>
                     <p class="part">noun</p>
                     <p class="plural">Plural: <em>ninjas</em></p>
                     <button onclick="alert('Ninja was liked')" class="likes">37 likes</button>
                 </div>
+                <!-- Right side of card -->
                 <div class="dcright">
                     <p class="def">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
                 </div>
             </div>
         </div>
+
+        <!-- Right side of page -->
         <div class="right">
             <div class="card">
                 <p>Dojonary is defined by <strong>YOU</strong></p>
+                <!-- Remove button when clicked-->
                 <button class="add" onclick="hide(this)">Add Definition</button>
             </div>
         </div>
-
-
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

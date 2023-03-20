@@ -4,12 +4,13 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* NAVBAR */
+/* Section containing the navbar itself*/
 .nav{
     display:flex;
     justify-content: center;
 }
 
+/*navbar containing elements*/
 .navbar{
     background-color:lightgray;
     width:700px;
@@ -20,12 +21,14 @@
     padding:10px 5px;
 }
 
+    /*title of page*/
 .title{
     font-size:xx-large;
     font-weight:bold;
     padding-left:30px;    
 }
 
+    /*search bar*/
 .search{
     border-style:solid;
     border-color:black;
@@ -33,6 +36,7 @@
     padding:2px 5px;
 }
 
+    /*login button*/
 .login{
     border-style:solid;
     border-color:black;
@@ -49,6 +53,8 @@
     justify-content:center;
 
 }
+
+/*left side of page*/
 .left{
     width:450px;
     height:500px;
@@ -57,12 +63,8 @@
     align-items:center;
     margin-right:10px;
 }
-.right{
-    width:250px;
-    height:500px;
-}
 
-/* left side */
+    /*definition card size and styling*/
 .def_card{
     border-style:solid;
     border-color:black;
@@ -74,6 +76,7 @@
     flex-direction:row;
 }
 
+    /*left side of definition card*/
 .dcleft{
     width:145px;
     height:150px;
@@ -82,41 +85,48 @@
     justify-content:space-around;
     align-items:center;
 }
-
+    /*word being defined text*/
 .word{
     font-size:xx-large;
     font-weight:bold;
 }
-
+    /*part of speech text*/
 .part{
     font-size:large;
     font-style:italic;
 }
-
+    /*plural form text*/
 .plural{
     font-size:small;
 }
-
+    /*likes button*/
 .likes{
     background-color:yellow;
     box-shadow:3px 3px black;
     padding:5px 20px;
     margin:10px;
 }
-
+    /*right side of definition card*/
 .dcright{
     width:300px;
     height:150px;
     display:flex;
     align-items:center;
 }
-
+    /*definition text*/
 .def{
     font-size:large;
     margin-right:40px;
     margin-left:10px;
 }
-/* right side */
+
+
+/*right side of page*/
+.right{
+    width:250px;
+    height:500px;
+}
+    /* total card dimensions and styling*/
 .card{
     width:240px;
     height:140px;
@@ -129,12 +139,13 @@
     justify-content:space-evenly;
     padding:0px 5px 0px 0px;
 }
-
+    /*text on card */
 .card>p{
     font-size:x-large;
     margin:0 15px 0 20px;
 }
 
+    /* Add definition button */
 .add{
     background-color:green;
     margin:0 15px 0 15px;
